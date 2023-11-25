@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Site da Escola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!--
+Código para a barra de navegação aqui
+-->
+<center>
+<nav> Escola Salesiano Dom Bosco Vida no Campus Conquistas O que há de novo? Entre em contanto</nav>
+<iframe id="video" src="data:image/jpeg;base64,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"></iframe>
+</center>
+
+<center>
+  <div class="travel_mainDiv">
+ <img src="church.jpg">
+
+ <h4 class="text-capitalize"><kbd>Igreja da Escola</kbd></h4>
+
+ <hr>
+
+ <h5 class="text-sucess text-capitalize">Foi construida em 1978</h5>
+ <p class="text-muted">Escreva algo sobre o lugar</p>
+
+  </div>
+  </center>
+<br><br>
+<center>
+  <div class="travel_mainDiv">
+ <img src="st2 (1).jpg">
+
+ <h4 class="text-capitalize"><kbd>Bibilioteca da Escola</kbd></h4>
+
+ <hr>
+
+ <h5 class="text-sucess text-capitalize">Foi construida em 1980</h5>
+ <p class="text-muted">Escreva algo sobre o lugar</p>
+
+  </div>
+  </center>
+  <br><br>
+  <center>
+    <div class="travel_mainDiv">
+   <img src="st3 (1).jpg">
+  
+   <h4 class="text-capitalize"><kbd>Auditorio da Escola</kbd></h4>
+  
+   <hr>
+  
+   <h5 class="text-sucess text-capitalize">Foi construida em 1982</h5>
+   <p class="text-muted">Escreva algo sobre o lugar</p>
+  
+    </div>
+    </center>
+
+    <h2 class="page-header" id="conquistas">Conquistas da Escola</h2>
+
+    <div class="br-primary filme-head" data-toggle="collapse" data-target="#conquistasDaEscola1">
+      Debate Interescolar sobre Poluição Ambiental<i class="fa fa-sort-desc"></i>
+    </div>
+
+
+    <div id="conquistasDaEscola1" class="collapse">
+   
+      <div class="conquistas_text">
+        <img src="se1 (1).jpg" class="img-responsive img-thumbnail">
+        <h5 class="text-sucess text-capitalize">Foi ganhado o primeiro premio no debate Interescolar
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+        </h5>
+    <p>Escreva Sobre essa conquista</p>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="br-primary filme-head" data-toggle="collapse" data-target="#conquistasDaEscola2">
+      Competição Interescolar de Futebol<i class="fa fa-sort-desc"></i>
+    </div>
+
+
+    <div id="conquistasDaEscola2" class="collapse">
+   
+      <div class="conquistas_text">
+        <img src="sm2 (1).jpg" class="img-responsive img-thumbnail">
+        <h5 class="text-sucess text-capitalize">Ficamos em segundo lugar na competição Interescolar de Futebol
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+        </h5>
+    <p>Escreva Sobre essa conquista</p>
+      </div>
+    </div>
+ 
+
+
+
+
+
+
+    
+    
+    <div class="br-primary filme-head" data-toggle="collapse" data-target="#conquistasDaEscola3">
+      Competição Interescolar de Ciencas<i class="fa fa-sort-desc"></i>
+    </div>
+
+
+    <div id="conquistasDaEscola3" class="collapse">
+   
+      <div class="conquistas_text">
+        <img src="sm3 (1).jpg" class="img-responsive img-thumbnail">
+        <h5 class="text-sucess text-capitalize">Ficamos em segundo lugar na competição Interescolar de Ciencas
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+            <span class="glyphicon-star"></span>
+        </h5>
+    <p>Escreva Sobre essa conquista</p>
+      </div>
+    </div>
+
+
+
+    <h2 class="page-header" id="novidade">Oque há de novo?</h2>
+
+
+    <ul class="list-group">
+
+        <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 enviroment_li">
+       <h4>Nova Cantina da Escola</h4>
+       <img src="canteen.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+       <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12"></p>As opções alimentares e responsaveis de menu online com fotos das refeições e descrições detalhadas de seus ingredientes ajudam os alunos cada aluno ou funcionario que acesse a cantina pode receber uma conta da cantina escolar no site da escola onde voce pode encomendar online marcando uma caiza e pagar as refeições de maneira online pode eliminar toda confusão e manuseio de dinheiro Aqui novamente, a diversidade é a chave.
+        </li>
+
+
+    </ul>
+
+
+
+
+
+
+
+
+
+    <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 enviroment_li">
+      <h4>Sistema de gestão de atendimento implementado</h4>
+      <img src="attendance.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+      <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Implementamos um sistema de presença online onde o filho pode ser marcado a presença uma vez que ele chegue a escola os pais são informados via sms isso auxilia a manter o registro de faltas do aluno onde os mesmo podem marcar a presença fazendo login sendo armazenado em um banco de dados que mais tarde pode ser verificado por um admin o monitoramento é tão eficaz que identifica a presença de um aluno e quais não estão aptos as aulas e não possuem conectividade com os conceitos trabalhados na quele momento sua grade curricular Assim que inserir  o numero de matricula ou o nome do aluno detalhes como participação podem ser demonstrados.
+                </p>
+       </li>
+
+
+   </ul>
+
+
+
+   <section id="contato">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.3626252269057!2d-35.20046867038049!3d-5.894167651832091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b300704deac125%3A0x9a5a006336d27a58!2sSalesiano%20Dom%20Bosco!5e0!3m2!1spt-BR!2sbr!4v1700935189235!5m2!1spt-BR!2sbr" height="450"  frameborder = "0" allowfullscreen=""></iframe>
+          <hr>
+          <img src="sp (1).png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4 ">
+          <h3>Nome do diretor: </h3>
+          <h4> Mario Da Silva</h4>
+
+          <div class="contato_1">
+
+            <a href="mailto:my@Gmail.com?Subject= Hi">
+              <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;escola@gmail.com</h5>
+            </a>
+
+            <a href="#">
+              <h5>><i class="fa fa-instagram"></i>&nbsp;&nbsp;escolaId</h5>
+            </a>
+
+            <a href="#">
+              <h5>><i class="fa fa-phone-square"></i>&nbsp;&nbsp;99116001600</h5>
+            </a>
+
+
+
+
+          </div>
+   </section>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
